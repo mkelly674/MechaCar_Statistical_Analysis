@@ -1,10 +1,14 @@
 library(dplyr)
+library(tidyverse)
 #read the csv
 Mecha.df <- read.csv(file = "MechaCar_mpg.csv")
 #linear regression of the six columns in the MechaCar csv
 lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data = Mecha.df)
 #getting p values and r-squared
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data = Mecha.df))
+#get the graph for slope for ground clearance and vehicle length
+ggplot(Mecha.df,aes(x=vehicle_length,y=mpg))+ geom_point() + geom_smooth(method = "lm", se= FALSE)
+ggplot(Mecha.df,aes(x=ground_clearance,y=mpg))+ geom_point() +geom_smooth(method = "lm", se=FALSE)
 
 #read the suspension_coil.csv
 Coil <- read.csv(file = "Suspension_Coil.csv")
