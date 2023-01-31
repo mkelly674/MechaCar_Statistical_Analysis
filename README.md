@@ -17,6 +17,10 @@ Looking at the slope, it seems to be going upwards on the x axis for both slopes
 
 ## Summary Statistics on Suspension Coils
 
+If we are looking at the table for the suspensions, we will notice that the first two lots are very similiar to each other. There is very little variance between them. The one that is different is lot 3. It has a mean of less than 1500 pounds per square inch. It also has a variance of over a 100. This means that something is going on in this lot that has wildly differing results.
+
+![2023-01-31](https://user-images.githubusercontent.com/114030563/215878415-cc32ea01-9be5-4c7f-ac20-aa73e561a76a.png)
+
 ## T-Tests on Suspension Coils
 
 ## Study Design: MechaCar vs Competition
