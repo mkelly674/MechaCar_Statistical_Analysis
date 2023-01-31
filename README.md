@@ -23,4 +23,6 @@ If we are looking at the table for the suspensions, we will notice that the firs
 
 ## T-Tests on Suspension Coils
 
+Since there was some change in variance in how the manufactoring lots suspensions, it needs to be looked at further. My hypothesis was that there was significant change that could impact the quality of the suspensions. I decided to do a t-test to find if that is true. Lot one had a p-value of 1 and lot 2 had a p-value of .6072 while lot 3 had a p-value as small as .04168. If the p-value reached below .05 then we will accept that there was significant change in quality that impacts the suspension.
+
 ## Study Design: MechaCar vs Competition
